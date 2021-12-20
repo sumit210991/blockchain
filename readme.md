@@ -3,11 +3,7 @@
 
 This is the readme for this project.  It will include any useful links and commands to run.
 
-## Install Visual Studio Code ##
 
-```https://code.visualstudio.com/Download```
-
-## Install Git ##
 
 1. get a github account at github.com
 
