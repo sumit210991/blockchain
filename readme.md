@@ -1,131 +1,50 @@
 
 # Readme #
 
-This is the readme for this project.  It will include any useful links and commands to run.
+This is the readme for this block chain project.  It will include the transaction of tokens to 10 different address.
 
 
-
-1. get a github account at github.com
-
-2. install git locally
-
-```https://github.com/git-guides/install-git```
-
-## Install NodeJs ##
-
-Install following the instructions at the following web page:
-
-```https://nodejs.org/en/download/```
-
-## Cloning a Repository ##
-
-Create a folder for your college projects.  Go into that folder.
-
-Inside that college folder, run:
-
-```git clone https://github.com/eoinco/nci_2021.git```
-
-## Updating Code in Repo from Github ##
-
-From the terminal in Visual Studio Code (or from the command line - as long as you are in the folder), run the following command:
-
-```git pull origin main```
-
-## for the moment ##
-
-you need git, nodejs and vs code installed.
-
-## Validation Steps ##
-
-How to tell you have git installed:
-
-```$git version```
-
-How to tell you have node installed:
-
-```$node -v```
-
-## Using your own repo ##
-
-First, create a repo in github.
-
-git clone into a folder
-
-make your changes
-
-then run the following commands:
-
-```$git add <your updated files>```
-
-```$git commit -m "<your commit message>"```
-
-```$git push origin main```
-
-## Executing a .JS file ##
-
-To execute a javascript file using node.js, run the following command:
-
-```$node <file name>```
+## Obejective
 
 
-## Dependencies and NPM ##
-
-We want to use large chunks of code that others have written to interact with Ethereum, like the web3 package.  Do this, we need to set up the Node Package Manager (npm).
-
-From inside your folder, to create your own package.json:
-
-```$npm init```
+Doing analysis on the smart contract which will be on ethereal test net network with node.js file for the contract interaction and to have a better knowledge on how the tokens distributed to the multiple accounts which are mentioned in the test net network. In this process we will be using test ethers for distribution and transfer, All the transactions will happen on the test net network, we will not be using the ethereal main net.
 
 
-## CURL accessing of handlers"
+## SMART CONTRACT
+There are six functions present in the contract  which are combined with the constructor which are trying to inherit the  interface. Before that we have seen the library above.
+Core supply and functions- This feature is holding the total supply of tokens in any contract.
 
-To POST to a route, execute the following CURL command:
+## Remix
 
-```curl -XPOST http://localhost:8080/transfer -H 'content-type: application/json' -d '{"account_to": "0x4d60E7f9d4901816981a0E4c6D95F394159C6371", "amount": "123000"}'```
+Create new  workspace and create a social contract
+https://remix.ethereum.org/
+
+## Etherscan
+
+https://ropsten.etherscan.io/tx/0x96ce49b0b38ce6e396a76043a6635432234399bb92dfc1b88fcccbe393fac06e
+
+## Create Account on Metamask
+
+Get the metamask crome extension
+chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/home.html
+Expanded version
+
+## Infura
+
+Here we will the the contract details.
+
+## Etherscan
 
 
-## Docker ##
+## Compile and deployment
 
-### View running docker containers ###
-
-```docker ps```
-
-### build a docker container ###
-
-```docker build -t nci/lab2021 .```
-
-### run the image ###
-
-```docker run -p 8090:8080 --name nci -d nci/lab2021```
-
-### kill a running container ###
-```docker kill [name]```
-
-### start/stop a container ###
-```docker start/stop [name]```
-
-### view logs ###
-```docker logs [name]```
-
-### view logs inside a container ###
-```docker logs -f [name]```
-
-### view images on your computer ###
-```docker image ls```
-
-### clear the docker system ###
-```docker system prune -f```
-
-### remove all docker images ###
-```docker image prune -a -f```
-
-### run docker-compose ###
-```docker-compose up```
-
-to run it in detached mode:
-
-```docker-compose up -d```
-
+For the smart contract we will be using the Remix IDE which is accessible online. There is no requirement of any type of extension. After this wee need to follow some steps mentioned below.
+1) Create our own work space.
+2) New file in our work space.
+3) Select the Compile from our navigation dashboard.
+4) Compiler should be same as we have used in the contract and other all settings should be default, and then compile. After compiling the Abu will be generated which is required afterwards.
+5)Deploy the code while using the Injected web3 where environment setting need to be done. After this it will connect to our Metamask account. Select the contract and then deploy.
+6)As our contract is deployed, we will be getting the transactions we can see our transaction on Etherscan.
 
 ## Requirements for Assignment ##
 
